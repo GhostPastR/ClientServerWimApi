@@ -154,9 +154,4 @@ void test_client_server_file(){
     server.closeSharedMemory();
 }
 
-
-
-//std::cout << connect_ok.size() << std::endl;
-//std::cout << std::wstring{testBuf.getBuf()}.size() << std::endl;
-
 #endif // TEST_CLIENT_SERVER_H

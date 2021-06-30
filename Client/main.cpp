@@ -10,7 +10,6 @@ DWORD WINAPI exec(LPVOID)
     generator.seed(time(0));
     std::uniform_int_distribution<unsigned int> dist(10, 1000);
     auto id = dist(generator);
-    std::cout << "==== " << id << std::endl;
     ClientSharedMemory client{id};
     client.exec();
     return 0;
